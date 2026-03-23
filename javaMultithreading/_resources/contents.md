@@ -40,7 +40,7 @@
 - Future vs Completable Future
 
 # Synchronizers
-- CuntDownLatch - one time event
+- CountDownLatch - one time event
 - CyclicBarrier - reusable sync point
 - Semaphores : permits manager
 
