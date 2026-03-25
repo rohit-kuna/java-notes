@@ -3,3 +3,7 @@
     - can pass runnable, callable
 - execute()
     - when we want to just execute a runnable
+
+NEW → COMPLETING → NORMAL (done)
+                 → EXCEPTIONAL
+                 → CANCELLED

@@ -14,6 +14,7 @@
     - block level
 - intrinsic lock
 - Object vs Class level lock
+- Conditions
 - Locks
     - ReentrantLock
     - ReadWriteLock
@@ -37,11 +38,14 @@
 
 # Runnable, Callable, Future, Completable Future
 - Runnable vs Callable
+- executorService
+- submit vs execute
 - Future vs Completable Future
+- Async programming
 
 # Synchronizers
-- CountDownLatch - one time event
-- CyclicBarrier - reusable sync point
+- CountDownLatch : one time event
+- CyclicBarrier : reusable sync point
 - Semaphores : permits manager
 
 # Concurrent Collection
