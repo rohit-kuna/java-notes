@@ -1,5 +1,5 @@
 package javaMultithreading.createThread;
-public class ThreadExtendsExample {
+public class _2ThreadExtendsExample {
     public static void main(String[] args){
         Thread t1 = new MyThread();
         t1.run();

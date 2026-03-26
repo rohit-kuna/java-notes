@@ -1,5 +1,5 @@
 package javaMultithreading.createThread;
-public class ThreadAnonymousClass {
+public class _3ThreadAnonymousClass {
     public static void main(String[] args) {
         Thread t1=new Thread(new Runnable(){
             @Override

@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.concurrent.Callable;
 
-public class FutureDemo {
+public class _6FutureDemo {
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newFixedThreadPool(3);
         Future<Integer> future = executorService.submit(new CallableTask1()); // callable is passed

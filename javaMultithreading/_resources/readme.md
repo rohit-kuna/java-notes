@@ -1,8 +1,0 @@
-- SequentialExecution
-- RunnableThreadExample
-- ThreadAnonymousClass
-- RunnableLambdaExpression
-- ThreadExtendsExample
-- JoinThreadExample
-- JoinThreadExampleCorrected
-- DeamonUserThreadExample

@@ -1,5 +1,5 @@
 package javaMultithreading.createThread;
-public class RunnableLambdaExpression {
+public class _4RunnableLambdaExpression {
     public static void main(String[] args){
         Thread t1=new Thread(()->{
             for(int i=0;i<=10;i++){

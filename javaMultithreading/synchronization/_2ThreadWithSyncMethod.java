@@ -1,33 +1,27 @@
 package javaMultithreading.synchronization;
 
-public class ThreadWithSyncBlock {
+public class _2ThreadWithSyncMethod {
 
     private static int count=0;
 
-    private static void increment(){
+    private static synchronized void increment(){
         count++;
     }
 
-    private static void decrement(){
+    private static synchronized void decrement(){
         count--;
     }
 
-    private static Object LOCK = new Object();
-
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Thread t1 = new Thread(()->{
             for(int i=0;i<=1000;i++){
-                synchronized(LOCK){
-                    increment();
-                }
+                increment();
             }
         });
 
         Thread t2 = new Thread(()->{
             for(int i=0;i<=1000;i++){
-                synchronized(LOCK){
-                    decrement();
-                }
+                decrement();
             }
         });
 

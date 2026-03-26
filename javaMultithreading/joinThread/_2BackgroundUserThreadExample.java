@@ -1,5 +1,5 @@
 package javaMultithreading.joinThread;
-public class BackgroundUserThreadExample {
+public class _2BackgroundUserThreadExample {
     public static void main(String[] args) {
         Thread bgThread = new Thread(new DaemonHelper());
         Thread usrThread = new Thread(new UserThreadHelper());

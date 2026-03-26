@@ -3,7 +3,7 @@ package javaMultithreading.executorService;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class ExecuteDemo {
+public class _1ExecuteDemo {
     public static void main(String[] args) {
         // use .execute() -> when yu don't expect a return value just start and forget
         ExecutorService executorService = Executors.newFixedThreadPool(4);

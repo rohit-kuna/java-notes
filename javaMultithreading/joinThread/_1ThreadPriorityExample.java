@@ -1,5 +1,5 @@
 package javaMultithreading.joinThread;
-public class ThreadPriorityExample {
+public class _1ThreadPriorityExample {
     public static void main(String[] args){
         Thread t1=new Thread(()->{
             for(int i=0;i<=15;i++){

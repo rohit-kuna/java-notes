@@ -1,5 +1,5 @@
 package javaMultithreading.joinThread;
-public class JoinThreadExampleIssue {
+public class _3JoinThreadExampleIssue {
     public static void main(String[] args) {
         Thread t1 =new Thread(()->{
             for(int i=0;i<=5;i++){

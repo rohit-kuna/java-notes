@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-public class CallableDemo {
+public class _5CallableSubmitDemo {
     public static void main(String[] args) {
         CallableTask callableTask=new CallableTask();
         ExecutorService service = Executors.newFixedThreadPool(3);

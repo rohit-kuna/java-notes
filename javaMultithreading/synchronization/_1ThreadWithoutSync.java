@@ -1,6 +1,6 @@
 package javaMultithreading.synchronization;
 
-public class ThreadWithoutSync {
+public class _1ThreadWithoutSync {
 
     private static int count=0;
 

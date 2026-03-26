@@ -1,5 +1,5 @@
 package javaMultithreading.createThread;
-public class SequentialExecution {
+public class _1SequentialExecution {
     public static void main(String[] args){
         demo1();
         demo2();

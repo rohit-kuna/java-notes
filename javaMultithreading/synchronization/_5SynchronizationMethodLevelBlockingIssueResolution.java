@@ -1,8 +1,12 @@
 package javaMultithreading.synchronization;
 
-public class SynchronizationMethodLevelBlockingIssue {
-    private static int count1=0;
-    private static int count2=0;
+public class _5SynchronizationMethodLevelBlockingIssueResolution {
+    private static Integer count1=0;
+    private static Integer count2=0;
+
+    private static Object lock1 = new Object();
+    private static Object lock2 = new Object();
+
     public static void main(String[] args){
         Thread t1 = new Thread(()->{
             for(int i=1;i<=10000;i++){
@@ -45,21 +49,33 @@ public class SynchronizationMethodLevelBlockingIssue {
         System.out.println("count1: " + count1 + ", count2: " + count2);
     }
 
-    public static synchronized void increment1(){
-        count1++;
+    public static void increment1(){
+        synchronized(lock1) { // when synchronized keyword use at block level, we need to pass lock
+            count1++;
+        }
     }
-    public static synchronized void increment2(){
-        count2++;
+    public static void increment2(){
+        synchronized(lock2){
+            count2++;
+        }
     }
-    public static synchronized void decrement1(){
-        count1--;
+    public static void decrement1(){
+        synchronized(lock1){
+            count1--;
+        }
+
     }
-    public static synchronized void decrement2(){
-        count2--;
+    public static void decrement2(){
+        synchronized(lock2){
+            count2--;
+        }
     }
 }
 
-// Now increment1/decrement1 is working on a diff resource from increment2/decrement2, i.e. count1 and count2
-// but as these methods are static it occupies class level lock as there is a ingle class level monitor
+// Now the locks are non blocking exclusive
+// As each lock is for different objects
+
+
+
 
 

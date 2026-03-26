@@ -1,6 +1,6 @@
 package javaMultithreading.createThread;
 
-public class CreateThreads {
+public class _5CreateThreads {
     public static void main(String[] args) {
         MyThread1 myThread1 = new MyThread1();
         myThread1.start();
